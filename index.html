@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Thien Dang</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik"
+      rel="stylesheet"
+    />
+    <!-- Link to font on Google website -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Link to icon on Google website -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ----------Header Section---------- -->
+    <div id="header">
+      <div class="img-gradient">
+        <div class="container">
+          <nav>
+            <img src="Images/logo_img.png" class="logo" />
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <span class="material-symbols-outlined" onclick="closemenu()">
+                close
+              </span>
+            </ul>
+            <span class="material-symbols-outlined" onclick="openmenu()">
+              menu
+            </span>
+          </nav>
+          <div class="header_text">
+            <p>UX/UI Designer | Animator</p>
+            <h1>
+              Hi, I'm <span>Thien Dang</span><br />
+              & <span>Welcome</span> to<br />
+              my portfolio
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------About Section---------- -->
+
+    <div id="about">
+      <div class="wavy-shape-divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/Selfie.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, I'm Thien Dang, a UX/UI designer with a passion for making
+              good and functional design. With numberous years of experience in
+              design, I've worked with clients in a range of industries, from
+              startups to Fortune 500 companies. My specialties include
+              branding, packaging design, and web design. I'm passionate about
+              creating designs that are not only visually stunning but also
+              communicate a message effectively.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Graphic Design</span><br />Create visual content</li>
+                <li><span>Animation</span><br />Create 2D animation</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2018-Presents</span><br />Freelance Artist</li>
+                <li><span>2023-2024</span><br />Pre-press at Copley Visual</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2026</span><br />Bachelor of Science in Interactive
+                  Design
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------Services Section---------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <span class="material-symbols-outlined"> dialogs </span>
+            <h2>Web Design</h2>
+            <p>Web Design description on what I do</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> responsive_layout </span>
+            <h2>UX/UI Design</h2>
+            <p>UX/UI Design description on what I do</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> animation </span>
+            <h2>Animation</h2>
+            <p>Animation Design description on what I do</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------Portfolio Section---------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/PhotobyAndyHolmesonUnsplash.jpg" />
+            <div class="portfolio-text">
+              <h3>Art 1</h3>
+              <p>Sky picture with pretty star</p>
+              <a href="https://www.istockphoto.com/photos/bright-star-night-sky"
+                ><span id="External-Link" class="material-symbols-outlined">
+                  open_in_new
+                </span></a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/PhotobyAndyHolmesonUnsplash.jpg" />
+            <div class="portfolio-text">
+              <h3>Art 2</h3>
+              <p>Sky picture with pretty star, but like different</p>
+              <a
+                href="https://www.space.com/28953-spring-night-sky-stars-2015.html"
+                ><span id="External-Link" class="material-symbols-outlined">
+                  open_in_new
+                </span></a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/PhotobyAndyHolmesonUnsplash.jpg" />
+            <div class="portfolio-text">
+              <h3>Animation</h3>
+              <p>Animation shorts</p>
+              <a href="https://www.tiktok.com/@tokithetooth"
+                ><span id="External-Link" class="material-symbols-outlined">
+                  open_in_new
+                </span></a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="#" class="bttn">See more</a>
+      </div>
+    </div>
+    <!-- ----------Contact Section---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>lucasdang97@gmail.com</p>
+            <p>404404404</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a href="mailto:lucasdang97@gmail.com"
+                ><i class="fa fa-envelope"></i
+              ></a>
+              <a href="https://www.linkedin.com" target="_blank"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="bttn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Button to scroll to top-->
+    <button id="ScrollToTop" class="material-symbols-outlined">
+      arrow_upward
+    </button>
+    <script src="myScript.js"></script>
+  </body>
+</html>
